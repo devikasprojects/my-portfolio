@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Devika S - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Devika S
+          <div class="contact_info">
+            <img src="icons8-email-24.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          devikaprograms@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="icons8-phone-50.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="tylijura-ai-generated-8775234_1920.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Devika S!
+          </h1>
+          <p>
+            I am a second-year BCA student specializing in Artificial Intelligence and Data Science. 
+            I am passionate about software development, artificial intelligence, and continuously expanding my technical knowledge.
+            My academic journey has given me a strong foundation in Python, SQL, C Programming, R Programming, Artificial Intelligence,
+            Machine Learning, Data Structures, and Operating Systems. 
+            To further enhance my skills, I actively participate in workshops and online learning programs. 
+            I am currently pursuing the IBM Full Stack Software Developer Professional Certificate on Coursera, where
+            I am gaining hands-on experience in modern web development technologies. I enjoy building projects, exploring emerging technologies, and 
+            continuously improving my skills to become a skilled software developer.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+      <div class="all_skills">
+
+        <div class="skill">
+           <img src="c.png">
+           <h6>C Programming</h6>
+           <p>1 year experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="python.png"/>
+            <h6>Python</h6>
+            <p>Learned Python programming and problem-solving.</p>
+        </div>
+
+        <div class="skill">
+            <img src="sql.png"/>
+            <h6>SQL</h6>
+            <p>Knowledge of database management and SQL queries.</p>
+        </div>
+
+        <div class="skill">
+            <img src="ml.png"/>
+            <h6>Machine Learning</h6>
+            <p>Studied the fundamentals of machine learning algorithms.</p>
+        </div>
+
+        <div class="skill">
+            <img src="html.png"/>
+            <h6>HTML</h6>
+            <p>Currently Learning</p>
+        </div>
+
+      </div>
+      </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Student Portfolio Website</h3>
+                <ul>
+                    <li>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my skills, projects, and achievements.</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>Machine Learning Mini Project</h3>
+                <ul>
+                    <li>Built a beginner-level machine learning project to understand data preprocessing, model training, and prediction using Python.</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>Library Management System</h3>
+                <ul>
+                    <li>Developed a basic library management system using C Programming to manage book records and user details.</li>
+                </ul>
+            </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+            "Devika is a dedicated and enthusiastic learner who is always eager to explore new technologies. She consistently puts in the effort to improve her technical skills and completes every task with sincerity."
+        </div>
+        <div class="recommendation">
+            "Working with Devika has been a great experience. She is creative, responsible, and always willing to learn new concepts. Her positive attitude makes her an excellent team member."
+        </div>
+        <div class="recommendation">
+            "Devika has a strong passion for Artificial Intelligence and software development. She approaches every project with curiosity and determination, making her a promising future software developer."
+        </div>
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="icons8-check.gif"/>
+      <h3>Thank you for your recommendation!</h3>
+      <p>Your feedback has been submitted successfully.</p>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
